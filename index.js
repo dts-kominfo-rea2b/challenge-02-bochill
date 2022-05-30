@@ -24,8 +24,12 @@ function lakukanLooping(arrPegawai) {
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
   let hasilLooping = null;
-  for(let x in dataYangAkanDilooping){
-    hasilLooping += dataYangAkanDilooping[x].namaDepan + " " + dataYangAkanDilooping[x].namaBelakang + ", ";
+  for (let x in dataYangAkanDilooping) {
+    hasilLooping +=
+      dataYangAkanDilooping[x].namaDepan +
+      " " +
+      dataYangAkanDilooping[x].namaBelakang +
+      ", ";
   }
 
   /*
@@ -33,9 +37,9 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah pria dari masing masing pegawai
   */
   let jumlahPria = null;
-  for(let m in dataYangAkanDilooping){
-      if(dataYangAkanDilooping[m].jenisKelamin == "M") continue;
-      jumlahPria++;
+  for (let m in dataYangAkanDilooping) {
+    if (dataYangAkanDilooping[m].jenisKelamin == "M") continue;
+    jumlahPria++;
   }
 
   /*
@@ -43,10 +47,10 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah wanita dari masing masing pegawai
   */
   let jumlahWanita = null;
-  for(let f in dataYangAkanDilooping){
-    if(dataYangAkanDilooping[f].jenisKelamin == "F") continue;
+  for (let f in dataYangAkanDilooping) {
+    if (dataYangAkanDilooping[f].jenisKelamin == "F") continue;
     jumlahWanita++;
-}
+  }
 
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
@@ -60,12 +64,12 @@ function lakukanLooping(arrPegawai) {
         "Jumlah Pria dan Wanita berimbang"
   */
   let komentar = null;
-  if(jumlahPria > jumlahWanita){
-      komentar = "Jumlah Pria lebih banyak dari Wanita";
+  if (jumlahPria > jumlahWanita) {
+    komentar = "Jumlah Pria lebih banyak dari Wanita";
   } else if (jumlahPria < jumlahWanita) {
     komentar = "Jumlah Wanita lebih banyak dari Pria";
   } else {
-    komentar =  "Jumlah Pria dan Wanita berimbang";
+    komentar = "Jumlah Pria dan Wanita berimbang";
   }
 
   // ! JANGAN DIMODIFIKASI
