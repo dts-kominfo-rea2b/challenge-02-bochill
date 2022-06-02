@@ -23,13 +23,9 @@ function lakukanLooping(arrPegawai) {
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-  let hasilLooping = "";
+  let hasilLooping = [];
   for (let x in dataYangAkanDilooping) {
-    hasilLooping +=
-      dataYangAkanDilooping[x].namaDepan +
-      " " +
-      dataYangAkanDilooping[x].namaBelakang +
-      ", ";
+    hasilLooping.push(dataYangAkanDilooping[x].namaDepan + " " + dataYangAkanDilooping[x].namaBelakang + ", ";
   }
 
   /*
@@ -38,10 +34,10 @@ function lakukanLooping(arrPegawai) {
   */
   let jumlahPria = 0;
   for (let m in dataYangAkanDilooping) {
-    if (dataYangAkanDilooping[m].jenisKelamin == "M") continue;
-    jumlahPria++;
-  }
-  return jumlahPria;
+    if (dataYangAkanDilooping[m].jenisKelamin == "M"){
+      jumlahPria++;
+    }    
+  }  
 
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
@@ -49,10 +45,10 @@ function lakukanLooping(arrPegawai) {
   */
   let jumlahWanita = 0;
   for (let f in dataYangAkanDilooping) {
-    if (dataYangAkanDilooping[f].jenisKelamin == "F") continue;
-    jumlahWanita++;
-  }
-  return jumlahWanita;
+    if (dataYangAkanDilooping[f].jenisKelamin == "F"){
+      jumlahWanita++;
+    }    
+  } 
 
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
