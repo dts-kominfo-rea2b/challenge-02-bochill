@@ -25,7 +25,7 @@ function lakukanLooping(arrPegawai) {
   */
   let hasilLooping = [];
   for (let x in dataYangAkanDilooping) {
-    hasilLooping.push(dataYangAkanDilooping[x].namaDepan + " " + dataYangAkanDilooping[x].namaBelakang + ", ";
+    hasilLooping.push(dataYangAkanDilooping[x].namaDepan + " " + dataYangAkanDilooping[x].namaBelakang + ", ");
   }
 
   /*
