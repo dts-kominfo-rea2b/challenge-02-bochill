@@ -41,6 +41,7 @@ function lakukanLooping(arrPegawai) {
     if (dataYangAkanDilooping[m].jenisKelamin == "M") continue;
     jumlahPria++;
   }
+  return jumlahPria;
 
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
@@ -51,6 +52,7 @@ function lakukanLooping(arrPegawai) {
     if (dataYangAkanDilooping[f].jenisKelamin == "F") continue;
     jumlahWanita++;
   }
+  return jumlahWanita;
 
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
@@ -66,7 +68,7 @@ function lakukanLooping(arrPegawai) {
   let komentar = null;
   if (jumlahPria > jumlahWanita) {
     komentar = "Jumlah Pria lebih banyak dari Wanita";
-  } else if (jumlahPria < jumlahWanita) {
+  } else if (jumlahWanita > jumlahPria) {
     komentar = "Jumlah Wanita lebih banyak dari Pria";
   } else {
     komentar = "Jumlah Pria dan Wanita berimbang";
